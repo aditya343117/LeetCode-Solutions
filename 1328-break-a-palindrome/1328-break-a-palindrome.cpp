@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool checkfornotpal(string s){
+    bool checkfornotpalindrome(string s){
         int i=0;
         int j=s.size()-1;
         while(i<=j){
@@ -21,7 +21,7 @@ public:
             if(palindrome[i]!='a'){
                 char t=palindrome[i];
                 palindrome[i]='a';
-                if(checkfornotpal(palindrome)){
+                if(checkfornotpalindrome(palindrome)){
                    return palindrome;  
                 }else{
                    palindrome[i]=t; 
