@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isRobotBounded(string instructions) {
-        
+       /* 
         int pin=0;
         for(int i=0; i<instructions.size(); i++){
             if(instructions[i] == 'R'){
@@ -14,7 +14,7 @@ public:
         }
         // we got the person will face towards direction of pin
         if(pin == 1 or pin == 2 or pin == 3) return true;
-        
+        */
         int x=0;
         int y=0;
         char direction ='n';
@@ -56,6 +56,6 @@ public:
                 }
             }
         }
-        return (x==0 && y==0)?true:false;
+        return (x==0 && y==0 || direction!='n')?true:false;
     }
 };
