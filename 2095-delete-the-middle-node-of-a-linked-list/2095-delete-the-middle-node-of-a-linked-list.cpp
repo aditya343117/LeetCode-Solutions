@@ -16,7 +16,7 @@ public:
         return 1+func(head->next);
     }
     ListNode* deleteMiddle(ListNode* head) {
-        if(head==NULL || head->next==NULL) return NULL;
+        if(head->next==NULL) return NULL;
         ListNode* slow=head;
         ListNode* fast=head->next;
         while(fast && fast->next){
