@@ -77,6 +77,7 @@ public:
              }
         }
         head->next=start->next;
+        head=start;
     }
 };
 
