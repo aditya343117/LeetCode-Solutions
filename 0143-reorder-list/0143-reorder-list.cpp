@@ -52,7 +52,7 @@ public:
         ListNode* tail=NULL;
         
         while(a){
-                if(a){
+            
                 ListNode* n= new ListNode(a->val);
                 if(start==NULL && tail==NULL){
                     start=n;
@@ -62,7 +62,7 @@ public:
                     tail=n;
                 }
                 a=a->next;
-               }
+               
              
              if(b){
              ListNode* newnode1= new ListNode(b->val);
