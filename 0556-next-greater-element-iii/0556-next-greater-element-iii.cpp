@@ -17,8 +17,8 @@ public:
         swap(s[i], s[j]);
         reverse(s.begin()+i+1, s.end());
         
-        int ans=stoll(s);
-        if(ans>n) return ans;
+        int ans=stoll(s);       //string to long long conversion 
+        if(ans>n) return ans;   //it ensure that our ans is greater than n
         return -1;
     }
 };
