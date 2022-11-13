@@ -11,7 +11,7 @@ public:
     
     void addNum(int num) {
          if(rightpq.size()==0 && leftpq.size()==0){
-             rightpq.push(num);      // bydefault we push into left
+             rightpq.push(num);      // bydefault we push into right
          }else if(num>rightpq.top()){
              rightpq.push(num);
          }else{
