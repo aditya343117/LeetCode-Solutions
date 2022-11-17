@@ -18,7 +18,7 @@ public:
         
         v.push_back(root->val);
         solve(root->left, v);
-        solve(root->right, v);
+        solve(root->right, v); 
     }
     
     int countNodes(TreeNode* root) {
