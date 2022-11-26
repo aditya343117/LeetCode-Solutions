@@ -29,10 +29,11 @@ public:
             string t=ip.substr(0, i+1);
             
             if(palindrom(t)){
-               vector<string>op1=op;
-               op1.push_back(t);
-               string ip1=ip.substr(i+1);
-                
+                vector<string>op1=op;
+                op1.push_back(t);
+               
+                string ip1=ip;
+                ip1.erase(0, i+1);
                solve(op1, ip1); 
             }
         }
